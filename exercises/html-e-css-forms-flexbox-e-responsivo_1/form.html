@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de curriculo</title>
+</head>
+<body>
+  <header>
+    <h1>Formuário de Currículo</h1>
+  </header>
+  <section>
+    <form action="" method="get">
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label for="full-name">Nome:</label>
+        <input type="text" name="name" id="full-name" required>
+        <label for="e-mail">E-mail:</label>
+        <input type="email" name="email" id="e-mail" required>
+        <label for="cpf">CPF:</label>
+        <input type="text" name="cpf" id="cpf" maxlength="11" required>
+        <label for="endereco">Endereço:</label>
+        <input type="text" name="endereco" id="endereco" required>
+        <label for="cidade">Cidade:</label>
+        <input type="text" name="cidade" id="cidade" required>
+        <label for="estado">Estado</label>
+        <select name="estado" id="estado" required>
+          <option value="">Selecione</option>
+          <option value="AC">Acre</option>
+          <option value="AL">Alagoas</option>
+          <option value="AP">Amapá</option>
+          <option value="AM">Amazonas</option>
+          <option value="BA">Bahia</option>
+          <option value="CE">Ceará</option>
+          <option value="DF">Distrito Federal</option>
+          <option value="ES">Espírito Santo</option>
+          <option value="GO">Goiás</option>
+          <option value="MA">Maranhão</option>
+          <option value="MT">Mato Grosso</option>
+          <option value="MS">Mato Grosso do Sul</option>
+          <option value="MG">Minas Gerais</option>
+          <option value="PA">Pará</option>
+          <option value="PB">Paraíba</option>
+          <option value="PR">Paraná</option>
+          <option value="PE">Pernambuco</option>
+          <option value="PI">Piauí</option>
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="RN">Rio Grande do Norte</option>
+          <option value="RS">Rio Grande do Sul</option>
+          <option value="RO">Rondônia</option>
+          <option value="RR">Roraima</option>
+          <option value="SC">Santa Catarina</option>
+          <option value="SP">São Paulo</option>
+          <option value="SE">Sergipe</option>
+          <option value="TO">Tocantins</option>
+        </select>
+        <label for="radio-caso">Casa:</label>
+        <input type="radio" name="tipo" id="radio-casa" value="Casa" required>
+        <label for="radio-apartamento">Apartamento:</label>
+        <input type="radio" name="tipo" id="radio-apartamento" value="Apartamento" required>
+      </fieldset>
+      <fieldset>
+        <legend>Último emprego</legend>
+        <label for="resumo">Resumo do Currículo:</label><br>
+        <textarea name="resumo" id="resumo" cols="30" rows="10"></textarea>
+        <label for="cargo">Cargo:</label>
+        <input type="text" name="cargo" id="cargo" maxlength="40" required>
+        <label for="descricao">Descição do Cargo</label>
+        <input type="text" id="descricao" name="descricao" maxlength="500" required>
+        <label for="data">Data:</label>
+        <input type="date" id="data" name="data">
+      </fieldset>
+      <button type="submit" id="btnSubmit">Enviar</button>
+      <button type="reset" id="btnReset">Limpar</button>
+    </form>
+  </section>
+</body>
+</html>
